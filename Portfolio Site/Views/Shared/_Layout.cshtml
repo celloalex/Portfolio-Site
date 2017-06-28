@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - AlexanderBuchaniec</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div>
+        <div>
+            <div class="nav">
+                <ul class="nav navbar-nav col-lg-12">
+                    <li class="col-lg-2"><a href='/' id = "action-link-prop"><img src="~/Content/Portfolio-logo.png" width="150" height="150" /></a></li>
+                    <li class="nav-bar-listings col-lg-2">@Html.ActionLink("About", "About", "Home", null, new { @id = "action-link-prop" })</li>
+                    <li class="nav-bar-listings col-lg-2">@Html.ActionLink("Contact", "Contact", "Home", null, new { @id = "action-link-prop" })</li>
+                    <li class="nav-bar-listings col-lg-2">@Html.ActionLink("Portfolio", "Portfolio", "Home", null, new { @id = "action-link-prop" })</li>
+                    <li class="nav-bar-listings col-lg-2">@Html.ActionLink("Resume", "Resume", "Home", null, new { @id = "action-link-prop" })</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p style="text-align:center;">alexanderbuchaniec.com</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

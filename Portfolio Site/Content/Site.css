@@ -1,0 +1,182 @@
+﻿body {
+    /*background: #dce5e6;*/
+    background: linear-gradient(#dce5e6, #7d8791);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Words in the navbar at top of page*/
+.home-page-words{
+    color: #dd0606;
+    background-color: none;
+    float: left;
+    font-size: 35px;
+}
+
+/*Words in the navbar at top of page*/
+.nav-bar-listings{
+    font-size: 35px;
+    padding-top: 75px;
+    text-align: center;
+}
+
+/*Words in the navbar at top of page*/
+#action-link-prop{
+    color: #585b5c;
+}
+
+/*Hover: for when words in navbar are hovered over*/
+#action-link-prop:hover{
+    font-weight: bold;
+    background-color: none;
+    background: none;
+}
+
+/*Alexander Buchaniec Center of homepage*/
+.home-page-name{
+    font-size: 50px;
+    color: #315082;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*Provides space between (alexander) and (buchaniec)*/
+#tab { 
+    display: inline-block; 
+    margin-left: 3%; 
+}
+
+/*White box surrounding name and fullstack developer*/
+.home-page-box{
+    border: solid;
+    border-width: 11px;
+    border-color: #f2f2f2;
+    margin-top: 10%;
+}
+
+/*Inside of white box and underneath Alexander Buchaniec on homepage*/
+.fullstack{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+
+
+/**Portfolio Page CSS*/
+/*H2 Tags for every project*/
+h1 {
+    color: #585b5c;
+    text-align: center;
+}
+
+.portfolio-img{
+    text-align: center;
+}
+
+.portfolio{
+    margin-top: 15px;
+}
+
+.portfolio > p {
+    color: #585b5c;
+    font-size: 20px;
+}
+.portfolio > ul > li {
+    color: #585b5c;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.svg-wrapper {
+  height: 60px;
+    margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  margin-top: 50px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #585b5c;
+}
+
+.text {
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+  text-align:center;
+}
+
+.text > a{
+      color: #585b5c;
+      text-decoration: none;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
